@@ -26,7 +26,7 @@ const Howitworks = () => {
   ];
   return (
     <>
-      <div className={`${style.about} d-flex justify-content-center`}>
+      <div className={`${style.about} d-flex justify-content-center pb-5`}>
         <div className="">
           <h3 className="text-center text-second">How it works?</h3>
           <div className="my-5">

@@ -28,6 +28,12 @@
   align-items: center;
 }
 
+.contact{
+  background: #ECFFDC;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
 
 
 /* The actual timeline (the vertical ruler) */

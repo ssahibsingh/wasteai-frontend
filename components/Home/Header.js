@@ -16,12 +16,12 @@ const Header = () => {
                     Waste AI is a waste management system that uses AI to detect
                     waste and classify it into different categories.
                   </p>
-                  <a
-                    href="#about"
-                    className="btn btn-main"
-                  >
-                    Explore More
-                  </a>
+                  <div className="mt-5 d-flex ">
+                    <a href="#about" className="btn btn-main">
+                     Try for free
+                    </a>
+                    <a href="#contact" className="btn btn-grey margin-left">Explore More</a>
+                  </div>
                 </div>
               </div>
             </div>
