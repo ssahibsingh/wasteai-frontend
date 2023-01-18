@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Josefin+Sans&display=swap');
+
 :root{
   --primary: #f7c32e;
   --secondary: #00B895;
+  --bg: #ECFFDC;
 }
+
+/* font-family: 'Averia Libre', cursive; */
+/* font-family: 'Josefin Sans', sans-serif; */
 
 /* width */
 ::-webkit-scrollbar {
@@ -36,8 +42,19 @@
   backdrop-filter: blur(30px);
   color: var(--black);
   min-width: 50px;
-  font-family: "Taviraj", serif;
+  font-family: 'Josefin Sans', sans-serif !important;
   z-index: 10;
+}
+
+.nav-link{
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease-in-out !important;
+  color: var(--secondary) !important;
+}
+
+.nav-link:hover{
+  transform: scale(1.08);
 }
 
 .header {
@@ -65,4 +82,21 @@
   margin: 0 1rem;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+}
+
+.text-pri{
+  color: var(--primary) !important;
+}
+
+.text-second{
+  color: var(--secondary) !important;
+}
+.text-bg{
+  color: var(--bg) !important;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

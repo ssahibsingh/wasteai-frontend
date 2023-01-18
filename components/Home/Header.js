@@ -1,5 +1,6 @@
 import React from "react";
 import style from "@/styles/Home.module.css";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -10,8 +11,8 @@ const Header = () => {
             <div className="col-md-6 col-sm-8 col-12">
               <div className="d-flex justify-content-center">
                 <div className="p-5">
-                  <h1 className="display-1 fw-bold">Waste AI</h1>
-                  <p>
+                  <h1 className="display-1 fw-bold text-second">Waste AI</h1>
+                  <p className="">
                     Waste AI is a waste management system that uses AI to detect
                     waste and classify it into different categories.
                   </p>
