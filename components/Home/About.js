@@ -4,10 +4,10 @@ const About = () => {
   
   return (
     <>
-      <div className={`${style.about} pt-5`} id="about">
-        <div className="container mt-5">
-          <h2 className="text-center display-5 fw-bold my-5 text-second">About</h2>
-          <div className="row justify-content-center align-items-center my-5">
+      <div className={`${style.about}`} id="about">
+        <div className="container">
+          <h2 className="text-center display-5 fw-bold mb-5 text-second">About</h2>
+          <div className="row justify-content-center align-items-center">
             <div className="col-md-6 col-sm-12">
               <div className="about-content">
                 {/* <h3 className="text-center">

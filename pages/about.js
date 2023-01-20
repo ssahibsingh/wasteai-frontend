@@ -1,16 +1,12 @@
-import { About, Footer, Navbar } from '@/components'
+import { AboutPage} from '@/components'
 import React from 'react'
 
 const about = () => {
   return (
     <>
-        <Navbar/>
-        <div className="about">
-            <div className="container">
-                <h2>About</h2>
-            </div>
+        <div className="about page">
+            <AboutPage />
         </div>
-        <Footer/>
     </>
   )
 }

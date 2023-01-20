@@ -1,0 +1,82 @@
+import React from "react";
+import style from "@/styles/About.module.css";
+import {FiGithub, FiInstagram, FiLinkedin} from 'react-icons/fi'
+import Image from "next/image";
+
+const AboutPage = () => {
+  return (
+    <>
+      {/* <div className="about-page page"> */}
+      <div className="container">
+        <h1 className="text-second text-center display-4 fw-bold">About</h1>
+        <div className="row justify-content-center py-4">
+          <div className="col-md-6 col-sm-8 col-12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+              illo eos dolor numquam in earum cum, consectetur dolore adipisci
+              delectus sint dignissimos placeat nostrum doloremque! Consectetur,
+              aliquam! Aspernatur omnis fugiat similique explicabo adipisci et
+              officiis. Iusto consectetur itaque aliquid molestias ullam. Saepe
+              mollitia perferendis, vitae quis sit similique excepturi dolorem.
+            </p>
+          </div>
+        </div>
+
+        {/* <div className="row">
+          <h4 className="text-center text-second">How It Works</h4>
+        
+        </div> */}
+        <div className="row justify-content-center">
+            <h4 className="text-center text-second">Our Team</h4>
+            <div className="col-md-3 col-sm-6 col-12">
+                <div className="team-card text-center p-3">
+                    <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`}/>
+                    <h5>Raj Gupta</h5>
+                    <p>ML Engineer</p>
+                    <ul className="list-unstyled d-flex gap-3 justify-content-center">
+                        <li><a href="https://linkedin.com/in/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin/></a></li>
+                        <li><a href="https://github.com/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiGithub/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-md-3 col-sm-6 col-12">
+                <div className="team-card text-center p-3">
+                    <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`}/>
+                    <h5>Kanav Phull</h5>
+                    <p>ML Engineer</p>
+                    <ul className="list-unstyled d-flex gap-3 justify-content-center">
+                        <li><a href="https://linkedin.com/in/kanavphull" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin/></a></li>
+                        <li><a href="https://github.com/kanavphull" className="text-second" target="_blank" rel="noreferrer"><FiGithub/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-md-3 col-sm-6 col-12">
+                <div className="team-card text-center p-3">
+                    <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`}/>
+                    <h5>Sahib Singh</h5>
+                    <p>Web Developer</p>
+                    <ul className="list-unstyled d-flex gap-3 justify-content-center">
+                        <li><a href="https://linkedin.com/in/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin/></a></li>
+                        <li><a href="https://github.com/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiGithub/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-md-3 col-sm-6 col-12">
+                <div className="team-card text-center p-3">
+                    <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`}/>
+                    <h5>Arun Jaiswal</h5>
+                    <p>App Developer</p>
+                    <ul className="list-unstyled d-flex gap-3 justify-content-center">
+                        <li><a href="https://linkedin.com/in/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin/></a></li>
+                        <li><a href="https://github.com/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiGithub/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      {/* </div> */}
+    </>
+  );
+};
+
+export default AboutPage;
