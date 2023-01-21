@@ -2,11 +2,12 @@ import { Footer, Navbar } from "@/components";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script";
-
+import { Toaster } from 'react-hot-toast';
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Navbar />
+      <Toaster />
       <Component {...pageProps} />
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

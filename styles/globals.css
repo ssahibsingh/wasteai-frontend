@@ -4,6 +4,11 @@
   --primary: #f7c32e;
   --secondary: #00B895;
   --bg: #ECFFDC;
+  --bg-drag: #8b152d;
+}
+
+*{
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -83,6 +88,20 @@ h1, h2, h3, h4, h5, h6{
 .btn-main:hover, .btn-main:focus, .btn-main:active{
   transform: scale(1.1);
 }
+.btn-red{
+  background-color: #8b152d !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 20px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active{
+  transform: scale(1.1);
+}
 
 .btn-grey{
   /* background-color: #9696961f !important; */
@@ -117,6 +136,7 @@ h1, h2, h3, h4, h5, h6{
 .page{
   padding-top: 100px;
   background: var(--bg);
+  min-height: calc(100vh - 140px);
 }
 
 .text-pri{
@@ -137,4 +157,11 @@ h1, h2, h3, h4, h5, h6{
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+.drop-icon{
+  font-size: 50px;
+  font-weight: ;
+  color: #4f5748;
+  transition: all 0.3s ease-in-out;
 }

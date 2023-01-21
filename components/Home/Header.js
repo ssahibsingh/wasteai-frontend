@@ -1,6 +1,7 @@
 import React from "react";
 import style from "@/styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -17,10 +18,10 @@ const Header = () => {
                     waste and classify it into different categories.
                   </p>
                   <div className="mt-5 d-flex ">
-                    <a href="#about" className="btn btn-main">
+                    <Link href="/try-me" className="btn btn-main">
                      Try for free
-                    </a>
-                    <a href="#contact" className="btn btn-grey margin-left">Explore More</a>
+                    </Link>
+                    <a href="#about" className="btn btn-grey margin-left">Explore More</a>
                   </div>
                 </div>
               </div>
