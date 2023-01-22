@@ -176,10 +176,14 @@ h6 {
   min-height: 80vh;
 }
 
-
 .about {
   min-height: 100vh;
   padding-top: 100px;
+  background: var(--bg);
+}
+
+.error-page {
+  min-height: calc(100vh - 90px);
   background: var(--bg);
 }
 

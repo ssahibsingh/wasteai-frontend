@@ -25,7 +25,7 @@ const AboutPage = () => {
           <h4 className="text-center text-second">Our Team</h4>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} /> */}
+              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/> */}
               <h5>Raj Gupta</h5>
               <p>ML Engineer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
@@ -36,7 +36,7 @@ const AboutPage = () => {
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              <Image src="/assets/kanavphull.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} />
+              <Image src="/assets/kanavphull.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
               <h5>Kanav Phull</h5>
               <p>ML Engineer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
@@ -47,7 +47,7 @@ const AboutPage = () => {
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} />
+              <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
               <h5>Sahib Singh</h5>
               <p>Web Developer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
@@ -58,7 +58,7 @@ const AboutPage = () => {
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} /> */}
+              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/> */}
               <h5>Arun Jaiswal</h5>
               <p>App Developer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
