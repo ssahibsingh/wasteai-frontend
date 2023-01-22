@@ -1,23 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Josefin+Sans&display=swap');
 
-:root{
+/* Global */
+:root {
   --primary: #f7c32e;
   --secondary: #00B895;
   --bg: #ECFFDC;
   --bg-drag: #8b152d;
+  --bg-drag2: #d2a52a8d;
+
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Josefin Sans', sans-serif !important;
 }
 
-/* font-family: 'Averia Libre', cursive; */
-/* font-family: 'Josefin Sans', sans-serif; */
+.footer {
+  background: var(--bg);
+}
 
+/* Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
@@ -39,11 +49,13 @@ h1, h2, h3, h4, h5, h6{
   background: rgb(104, 104, 104);
 }
 
+/* Custom Selection color */
 ::selection {
   color: inherit;
   background: rgba(125, 125, 125, 0.164);
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
   position: fixed !important;
@@ -55,27 +67,21 @@ h1, h2, h3, h4, h5, h6{
   z-index: 10;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.05rem !important;
   font-weight: 600 !important;
   transition: all 0.3s ease-in-out !important;
   color: var(--secondary) !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   transform: scale(1.08);
 }
 
-.header {
-  min-height: 80vh;
-  /* background: rgb(255, 255, 255, 0.7); */
-}
+/* Utilities */
 
-.footer{
-  background: #dffac8;
-}
-
-.btn-main{
+/* Custom Buttons */
+.btn-main {
   background-color: var(--primary) !important;
   border: none;
   border-radius: 20px !important;
@@ -85,10 +91,13 @@ h1, h2, h3, h4, h5, h6{
   transition: all 0.3s ease-in-out !important;
 }
 
-.btn-main:hover, .btn-main:focus, .btn-main:active{
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
   transform: scale(1.1);
 }
-.btn-red{
+
+.btn-red {
   background-color: #8b152d !important;
   color: #fff !important;
   border: none;
@@ -99,13 +108,13 @@ h1, h2, h3, h4, h5, h6{
   transition: all 0.3s ease-in-out !important;
 }
 
-.btn-red:hover, .btn-red:focus, .btn-red:active{
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
   transform: scale(1.1);
 }
 
-.btn-grey{
-  /* background-color: #9696961f !important; */
-  /* color: var(--secondary) !; */
+.btn-grey {
   border: 1px solid #96969672 !important;
   border-radius: 20px !important;
   padding: 12px 20px !important;
@@ -114,54 +123,75 @@ h1, h2, h3, h4, h5, h6{
   transition: all 0.3s ease-in-out !important;
 }
 
-.btn-grey:hover, .btn-grey:focus, .btn-grey:active{
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active {
   background-color: #9696961f !important;
   transform: scale(1.1);
 }
 
-.margin-left{
-  margin-left: 1rem;
-}
-
-.work-icon{
+/* How it works - icons */
+.work-icon {
   background-color: #eecc6f;
   padding: 10px 20px 17px 20px;
-  color:#000;
+  color: #000;
   font-size: 2rem;
   margin: 0 1rem;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 
-.page{
-  padding-top: 100px;
-  background: var(--bg);
-  min-height: calc(100vh - 140px);
-}
 
-.text-pri{
+/* Custom Text */
+.text-pri {
   color: var(--primary) !important;
 }
 
-.text-second{
+.text-second {
   color: var(--secondary) !important;
 }
-.text-bg{
+
+.text-bg {
   color: var(--bg) !important;
 }
-.bg{
+
+/* Other */
+.bg {
   background-color: var(--bg) !important;
 }
 
-.no-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+.margin-left {
+  margin-left: 1rem;
 }
 
-.drop-icon{
+.no-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Some Utility Page CSS */
+.header {
+  min-height: 80vh;
+}
+
+
+.about {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: var(--bg);
+}
+
+/* Try Me Page */
+.try-me {
+  padding-top: 100px;
+  background: var(--bg);
+  min-height: calc(100vh - 90px);
+}
+
+.drop-icon {
   font-size: 50px;
-  font-weight: ;
   color: #4f5748;
   transition: all 0.3s ease-in-out;
 }

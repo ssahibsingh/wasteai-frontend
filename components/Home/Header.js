@@ -14,8 +14,7 @@ const Header = () => {
                 <div className="p-5">
                   <h1 className="display-1 fw-bold text-second">Waste AI</h1>
                   <p className="">
-                    Waste AI is a waste management system that uses AI to detect
-                    waste and classify it into different categories.
+                  Revolutionizing waste management with AI. WasteAI.co - Snap, Sort, Succeed. Accurately classify trash with deep learning. Experience a cleaner future.
                   </p>
                   <div className="mt-5 d-flex ">
                     <Link href="/try-me" className="btn btn-main">

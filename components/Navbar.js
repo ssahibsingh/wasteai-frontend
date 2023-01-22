@@ -8,7 +8,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <Link className="navbar-brand" href="#">
-                        <Image src="/logo.png" alt="" width={190} height={60}></Image>
+                        <Image src="/logo.png" alt="WasteAI Logo" width={190} height={60}></Image>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -21,9 +21,9 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" href="/about">About</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" href="/contact">Contact</Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link className="nav-link" href="/try-me">Try Me</Link>
                             </li>

@@ -1,34 +1,29 @@
 import React from "react";
 import style from "@/styles/Home.module.css";
 const About = () => {
-  
   return (
     <>
       <div className={`${style.about}`} id="about">
         <div className="container">
-          <h2 className="text-center display-5 fw-bold mb-5 text-second">About</h2>
+          <h2 className="text-center display-5 fw-bold text-second">
+            About
+          </h2>
+          <h5 className="text-pri text-center mb-4">Snap, Sort, Succeed with WasteAI.co!</h5>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-6 col-sm-12">
               <div className="about-content">
-                {/* <h3 className="text-center">
-                  <span className="text-">Waste AI</span> is a waste management
-                  system that uses AI to detect waste and classify it into
-                  different categories.
-                </h3> */}
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates aspernatur vero omnis veniam quod? Aut labore iste
-                  nostrum eveniet, natus, culpa asperiores tempora beatae
-                  dolorum vitae distinctio possimus minima optio?Lorem ipsum
-                  dolor sit amet consectetur, adipisicing elit. Deserunt est,
-                  provident asperiores quae earum maiores, quasi eaque
-                  doloremque ullam suscipit iste facilis quam dignissimos
-                  aspernatur cupiditate sequi architecto minima assumenda!
+                  At WasteAI.co, we are committed to promoting sustainable waste
+                  management practices through the use of cutting-edge
+                  technology. Our team of experts have developed a deep learning
+                  model that can accurately classify trash in any image into
+                  different categories. By using our website, individuals and
+                  organizations can easily sort their waste and ensure that it
+                  is disposed of or recycled properly.
                 </p>
               </div>
             </div>
           </div>
-          
 
           {/* <div className="my-5"></div> */}
         </div>

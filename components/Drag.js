@@ -2,7 +2,9 @@ import axios from "axios";
 import Image from "next/image";
 import React, { useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import { BsFolder2Open, BsFolder } from "react-icons/bs";
+import { BsFolder } from "react-icons/bs";
+
+
 const baseStyle = {
     flex: 1,
     width: "100%",
@@ -14,9 +16,10 @@ const baseStyle = {
     //   padding: "20px",
     borderWidth: "5px",
     borderRadius: "30px",
-    borderColor: "#8366188d",
+    borderColor: "#d2a52a8d",
     borderStyle: "dashed",
-    backgroundColor: "#a2c1a593",
+    // backgroundColor: "#a2c1a593",
+    backgroundColor: "#cdf0d0",
     color: "#000",
     outline: "none",
     transition: "border .24s ease-in-out",
