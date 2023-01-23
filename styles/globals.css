@@ -199,3 +199,10 @@ h6 {
   color: #4f5748;
   transition: all 0.3s ease-in-out;
 }
+
+.image-preview{
+  border: 3px dashed #777;
+  border-radius: 20px;
+  padding: 15px 30px;
+
+}
