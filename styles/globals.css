@@ -6,7 +6,7 @@
   --secondary: #00B895;
   --bg: #ECFFDC;
   --bg-drag: #8b152d;
-  --bg-drag2: #d2a52a8d;
+  --bg-drag2: #bb9e4d;
 
 }
 
@@ -204,5 +204,4 @@ h6 {
   border: 3px dashed #777;
   border-radius: 20px;
   padding: 15px 30px;
-
 }

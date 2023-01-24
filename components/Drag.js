@@ -3,7 +3,8 @@ import Image from "next/image";
 import React, { useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { BsFolder } from "react-icons/bs";
-import { AiFillCloseCircle } from "react-icons/ai";
+import DotLoader from "react-spinners/DotLoader";
+
 
 const baseStyle = {
   flex: 1,
@@ -89,6 +90,7 @@ const Drag = () => {
       headers: { "content-type": "multipart/form-data" },
     };
     try {
+      setFile(null)
       let response = await axios.post(
         "https://api.wasteai.co/",
         formData,
@@ -111,7 +113,7 @@ const Drag = () => {
   };
   return (
     <>
-      <div className="col-md-6 col-sm-12 col-12 text-center">   
+      <div className="col-md-6 col-sm-12 col-12 text-center">
         <div {...getRootProps({ style })}>
           <input {...getInputProps()} />
           <div className={isDragActive ? "text-muted" : null}>
@@ -131,28 +133,34 @@ const Drag = () => {
               <div className="row text-center justify-content-center">
                 <div className="col-md-10 col-12 image-preview">
                   <div className="d-flex justify-content-around align-items-center">
-                    <div className="d-flex justify-content-around gap-3 align-items-center">
-                      <Image
-                        className="rounded"
-                        src={file.preview}
-                        alt=""
-                        width={150}
-                        height={150}
-                      />
-                      <p className="">{file.name}</p>
+                    <div className="row justify-content-around align-items-center p-2">
+                      <div className="col-auto">
+                        <Image
+                          className="rounded img-fluid"
+                          src={file.preview}
+                          alt=""
+                          width={150}
+                          height={150}
+                        />
+                      </div>
+                      <div className="col-auto">
+                        <p className="">{file.name}</p>
+                      </div>
                     </div>
-                    <div className="d-flex justify-content-around align-items-center gap-2">
-                      <button
-                        onClick={() => {
-                          setFile(null);
-                        }}
-                        className="btn-danger p-0 px-2 pb-1 btn rounded-circle"
-                      >
-                        x
-                      </button>
-                      <button className="btn btn-main" onClick={handleUpload}>
-                        Predict
-                      </button>
+                    <div className="row justify-content-around align-items-center">
+                      <div className="col-auto d-flex ustify-content-around align-items-center gap-1">
+                        <button
+                          onClick={() => {
+                            setFile(null);
+                          }}
+                          className="btn-danger p-0 px-2 pb-1 btn rounded-circle "
+                        >
+                          x
+                        </button>
+                        <button className="btn btn-main" onClick={handleUpload}>
+                          Predict
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -176,6 +184,7 @@ const Drag = () => {
         </div>
         {loading && (
           <div className="mt-3">
+            <DotLoader className="mx-auto" color="#bb9e4d"/>
             <p>Predicting.... Please Wait</p>
           </div>
         )}
@@ -183,11 +192,25 @@ const Drag = () => {
           <div className="mt-3">
             <div className="row justify-content-center align-items-center ">
               <div className="col-md-6 col-sm-12 col-12 mb-2">
-                <Image className="rounded" src={`https://api.wasteai.co/image/${result.image_id}`} alt="" width={150} height={150} /> 
+                <Image
+                  className="rounded img-fluid"
+                  src={`https://api.wasteai.co/image/${result.image_id}`}
+                  alt=""
+                  width={150}
+                  height={150}
+                />
               </div>
               <div className="col-md-6 col-sm-12 col-12 text-second text-start mt-2">
-                <p>Prediction: <span className="text-capitalize fw-bold">{result.prediction}</span></p>
-                <p>Confidence: <span className="fw-bold">{result.confidence}</span></p>
+                <p>
+                  Prediction:{" "}
+                  <span className="text-capitalize fw-bold">
+                    {result.prediction}
+                  </span>
+                </p>
+                <p>
+                  Confidence:{" "}
+                  <span className="fw-bold">{result.confidence}</span>
+                </p>
               </div>
             </div>
           </div>

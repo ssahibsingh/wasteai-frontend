@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['api.wasteai.co']
+    domains: ['api.wasteai.co', 'media.giphy.com']
   }
 }
 
