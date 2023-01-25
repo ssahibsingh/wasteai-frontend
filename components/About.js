@@ -25,11 +25,11 @@ const AboutPage = () => {
           <h4 className="text-center text-second">Our Team</h4>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/> */}
+              <Image src="/assets/rajgupta2.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
               <h5>Raj Gupta</h5>
               <p>ML Engineer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
-                <li><a href="https://linkedin.com/in/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin /></a></li>
+                <li><a href="https://www.linkedin.com/in/raj-gupta-510534118" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin /></a></li>
                 <li><a href="https://github.com/RAJGUPTA28" className="text-second" target="_blank" rel="noreferrer"><FiGithub /></a></li>
               </ul>
             </div>
@@ -58,12 +58,12 @@ const AboutPage = () => {
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              {/* <Image src="/assets/sahibsingh.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/> */}
-              <h5>Arun Jaiswal</h5>
+              <Image src="/assets/arunjaswal.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
+              <h5>Arun Jaswal</h5>
               <p>App Developer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
-                <li><a href="https://linkedin.com/in/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin /></a></li>
-                <li><a href="https://github.com/ssahibsingh" className="text-second" target="_blank" rel="noreferrer"><FiGithub /></a></li>
+                <li><a href="https://linkedin.com/in/arunjaswal" className="text-second" target="_blank" rel="noreferrer"><FiLinkedin /></a></li>
+                <li><a href="https://github.com/arunjaswal2002" className="text-second" target="_blank" rel="noreferrer"><FiGithub /></a></li>
               </ul>
             </div>
           </div>

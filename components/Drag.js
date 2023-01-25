@@ -43,7 +43,10 @@ const Drag = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState({
+    prediction: "Plastic",
+    confidence: 0.9,
+  });
   const {
     acceptedFiles,
     fileRejections,
@@ -200,7 +203,7 @@ const Drag = () => {
                   height={150}
                 />
               </div>
-              <div className="col-md-6 col-sm-12 col-12 text-second text-start mt-2">
+              <div className="col-md-6 col-sm-12 col-12 text-second text-center mt-2">
                 <p>
                   Prediction:{" "}
                   <span className="text-capitalize fw-bold">
