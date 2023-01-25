@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WasteAi.co - Snap, Sort, Succeed with WasteAI.co!</title>
+        <title>WasteAI.co - Snap, Sort, Succeed with WasteAI.co!</title>
         <meta name="title" content="WasteAi.co - Snap, Sort, Succeed with WasteAI.co!" />
         <meta name="description" content="WasteAI.co is a cutting-edge website that uses deep learning techniques to classify trash in the image uploaded to the website into different categories. Upload an image of your trash and let WasteAI.co help you sort it correctly" />
 

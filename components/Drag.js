@@ -3,8 +3,7 @@ import Image from "next/image";
 import React, { useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { BsFolder } from "react-icons/bs";
-import DotLoader from "react-spinners/DotLoader";
-
+import HashLoader from "react-spinners/HashLoader";
 
 const baseStyle = {
   flex: 1,
@@ -21,7 +20,8 @@ const baseStyle = {
   borderColor: "#999",
   borderStyle: "dashed",
   // backgroundColor: "#a2c1a593",
-  backgroundColor: "#cdf0d0",
+  // backgroundColor: "#cdf0d0",
+  backgroundColor: "#6aba5e1e",
   color: "#000",
   outline: "none",
   transition: "border .24s ease-in-out",
@@ -90,7 +90,7 @@ const Drag = () => {
       headers: { "content-type": "multipart/form-data" },
     };
     try {
-      setFile(null)
+      setFile(null);
       let response = await axios.post(
         "https://api.wasteai.co/",
         formData,
@@ -184,7 +184,7 @@ const Drag = () => {
         </div>
         {loading && (
           <div className="mt-3">
-            <DotLoader className="mx-auto" color="#bb9e4d"/>
+            <HashLoader className="mx-auto" color="#6aba5e" />
             <p>Predicting.... Please Wait</p>
           </div>
         )}

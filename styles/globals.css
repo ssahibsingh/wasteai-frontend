@@ -3,10 +3,11 @@
 /* Global */
 :root {
   --primary: #f7c32e;
-  --secondary: #00B895;
+  /* --secondary: #00B895; */
+  --secondary: #00B76C;
   --bg: #ECFFDC;
   --bg-drag: #8b152d;
-  --bg-drag2: #bb9e4d;
+  --bg-drag2: #6aba5e34;
 
 }
 
