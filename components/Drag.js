@@ -43,10 +43,7 @@ const Drag = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState({
-    prediction: "Plastic",
-    confidence: 0.9,
-  });
+  const [result, setResult] = useState(null);
   const {
     acceptedFiles,
     fileRejections,
