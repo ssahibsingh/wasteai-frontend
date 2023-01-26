@@ -25,7 +25,7 @@ const AboutPage = () => {
           <h4 className="text-center text-second">Our Team</h4>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              <Image src="/assets/rajgupta2.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
+              <Image src="/assets/rajgupta3.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
               <h5>Raj Gupta</h5>
               <p>ML Engineer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
@@ -58,7 +58,7 @@ const AboutPage = () => {
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="team-card text-center p-3">
-              <Image src="/assets/arunjaswal.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
+              <Image src="/assets/arunjaswal3.svg" alt="" width={200} height={200} className={`img-fluid m-2 ${style.teamImage}`} priority/>
               <h5>Arun Jaswal</h5>
               <p>App Developer</p>
               <ul className="list-unstyled d-flex gap-3 justify-content-center">
