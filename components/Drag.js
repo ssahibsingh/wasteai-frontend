@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { BsFolder } from "react-icons/bs";
 import HashLoader from "react-spinners/HashLoader";
@@ -92,7 +92,7 @@ const Drag = () => {
     try {
       setFile(null);
       let response = await axios.post(
-        "https://api.wasteai.co/",
+        process.env.NEXT_PUBLIC_SERVER,
         formData,
         config
       );
@@ -111,6 +111,7 @@ const Drag = () => {
     }
     setLoading(false);
   };
+  
   return (
     <>
       <div className="col-md-6 col-sm-12 col-12 text-center">
@@ -191,15 +192,15 @@ const Drag = () => {
         {result && (
           <div className="mt-3">
             <div className="row justify-content-center align-items-center ">
-              <div className="col-md-6 col-sm-12 col-12 mb-2">
+              {/* <div className="col-md-6 col-sm-12 col-12 mb-2">
                 <Image
                   className="rounded img-fluid"
-                  src={`https://api.wasteai.co/image/${result.image_id}`}
+                  src={`${process.env.NEXT_PUBLIC_SERVER}/image/${result.image_id}`}
                   alt=""
                   width={150}
                   height={150}
                 />
-              </div>
+              </div> */}
               <div className="col-md-6 col-sm-12 col-12 text-second text-center mt-2">
                 <p>
                   Prediction:{" "}
