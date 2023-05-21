@@ -8,6 +8,7 @@
   --bg: #ECFFDC;
   --bg-drag: #8b152d;
   --bg-drag2: #6aba5e34;
+  --dark-primary: #C78100;
 
 }
 
@@ -156,6 +157,10 @@ h6 {
   color: var(--bg) !important;
 }
 
+.text-dark-primary{
+  color: var(--dark-primary) !important;
+}
+
 /* Other */
 .bg {
   background-color: var(--bg) !important;
@@ -205,4 +210,8 @@ h6 {
   border: 3px dashed #777;
   border-radius: 20px;
   padding: 15px 30px;
+}
+
+.drag-select-model{
+  width: 50%;
 }
