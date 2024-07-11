@@ -11,7 +11,7 @@ The idea is to decrease human intervention and make the waste segregation proces
 ## Demo
 
 
-You can view the live demo of the WasteAI frontend [http://your-frontend-url.com](https://wasteai.vercel.app/). 
+You can view the live demo of the WasteAI frontend [here](https://wasteai.vercel.app/). 
 
 > Please note that while the frontend is accessible, the backend services are currently unavailable due to issues with paid deployment. For a fully functional experience, you can run the project locally by following the setup instructions provided below.
 
